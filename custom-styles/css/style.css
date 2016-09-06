@@ -5,6 +5,14 @@
     src: url(../font/lobster.otf) ;
 }
 
+h2, h3, h4, h5 {
+    color: #8e44ad
+}
+a:hover {
+    color: #8e44ad;
+    text-decoration-color: #8e44ad;
+}
+
 .logo {
     font-family: lobster ;
     font-size: 22pt ;
