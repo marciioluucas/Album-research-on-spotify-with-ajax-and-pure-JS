@@ -17,7 +17,7 @@ function ajaxGet() {
 
             for (var i = 0; i < totalItems; i++) {
 
-                html += "<li class='list-group-item-text'>\n" +
+                html += "<li class='list-group-item' style='height: 320px; !important;'>\n" +
                     "<div class='col-md-12'>\n" +
                     "<div class='col-md-4'>\n" +
                     "<img src='" + obj.albums.items[i].images[1].url + "'" +
@@ -32,6 +32,9 @@ function ajaxGet() {
                     "</li>\n";
             }
             document.getElementById("listaAlbums").innerHTML = html;
+        }
+        if (totalItems == 0) {
+            document.getElementById("listaAlbums").innerHTML = "Não encontramos o album especificado :<";
         }
     };
     xhttp.open("GET", "https://api.spotify.com/v1/search?q=" + vCampo.value + "&type=album", true);
