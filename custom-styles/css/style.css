@@ -19,95 +19,41 @@
     text-align: center !important;
 }
 
-input[type="text"] {
-    font-size:18px ;
-    padding:10px 10px 10px 5px ;
-    display:block ;
-    width:300px ;
-    border:none ;
-    border-bottom:1px solid #00b050 ;
+.form-control {
+    background: transparent;
+    border: none;
+    color: #fff;
+    border-radius: 0;
+    border-bottom: solid #fff 1px;
+    box-shadow: none;
+
 }
 
-input[type="button"] {
-    font-size:18px ;
-    padding:10px 10px 10px 5px ;
-    display:block ;
-    width:300px ;
-    border:none ;
-    background-color: #fff ;
-    border-bottom:1px solid #fff ;
-    color: #fff ;
-}
-input:focus { outline:none ; }
-
-label {
-    color:#999 ;
-    font-size:18px ;
-    font-weight:normal ;
-    position:absolute ;
-    pointer-events:none ;
-    left:5px ;
-    top:10px ;
-    transition:0.2s ease all ;
-    -moz-transition:0.2s ease all ;
-    -webkit-transition:0.2s ease all ;
+.form-control:active {
+    box-shadow: none !important;
 }
 
-input:focus ~ label, input:valid ~ label 		{
-    top:-20px ;
-    font-size:14px ;
-    color:#fff ;
+.form-control:focus {
+    border-color: #fff;
+    opacity: 0.6;
+    box-shadow: none !important;
 }
 
-.barra 	{ position:relative ; display:block ; width:300px ; }
-.barra:before, .barra:after 	{
-    content:'' ;
-    height:2px ;
-    width:0 ;
-    bottom:1px ;
-    position:absolute ;
-    background:#fff ;
-    transition:0.2s ease all ;
-    -moz-transition:0.2s ease all ;
-    -webkit-transition:0.2s ease all ;
-}
-.barra:before {
-    left:50% ;
-}
-.barra:after {
-    right:50% ;
+.form-control::-moz-placeholder {
+    color: #fff;
+    opacity: 0.5
 }
 
-input:focus ~ .barra:before, input:focus ~ .barra:after {
-    width:50% ;
+.form-control:-ms-input-placeholder {
+    color: #fff
 }
 
-.highlight {
-    position:absolute ;
-    height:60% ;
-    width:100px ;
-    top:25% ;
-    left:0 ;
-    pointer-events:none ;
-    opacity:0.5 ;
+.form-control::-webkit-input-placeholder {
+    color: #fff
 }
 
-input:focus ~ .highlight {
-    -webkit-animation:inputHighlighter 0.3s ease ;
-    -moz-animation:inputHighlighter 0.3s ease ;
-    animation:inputHighlighter 0.3s ease ;
-}
-
-
-@-webkit-keyframes inputHighlighter {
-    from { background:#fff ; }
-    to 	{ width:0 ; background:transparent ; }
-}
-@-moz-keyframes inputHighlighter {
-    from { background:#fff ; }
-    to 	{ width:0 ; background:transparent ; }
-}
-@keyframes inputHighlighter {
-    from { background:#fff ; }
-    to 	{ width:0 ; background:transparent ; }
+.div-resultados {
+    -webkit-box-shadow: 0px -9px 106px 7px rgba(168,168,168,0.47);
+    -moz-box-shadow: 0px -9px 106px 7px rgba(168,168,168,0.47);
+    box-shadow: 0px -9px 106px 7px rgba(168,168,168,0.47);
 }

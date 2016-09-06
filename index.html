@@ -30,21 +30,20 @@
 <section class="cabecarioBusca">
     <div class="container">
         <h1 class="font-lobster">Vamos lá! Procure algum album que queira ouvir.</h1>
-        <input type="text" class="form-control" placeholder="Search" onkeyup="ajaxGet()" id="a">
-        <span class="highlight"></span>
-        <span class="barra"></span>
-        <label for="a">Album</label>
+        <div class="col-md-12" style="margin-left: 25%;">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Digite o nome de um album" onkeyup="ajaxGet()"
+                       id="a">
+            </div>
+        </div>
 
     </div>
 </section>
-<div class="container" style="margin-top: 100px;">
-
-
-    <ul id="listaAlbums" class="list-group">
-
-    </ul>
+<div class="div-resultados">
+    <div class="container">
+        <ul id="listaAlbums" class="list-group"></ul>
+    </div>
 </div>
-
 <footer style="width: 100%; text-align: center">
     Feito com <span style="color: #d80404;">❤</span> por: <a href="http://github.com/marciioluucas">Márcio Lucas</a>
 </footer>
