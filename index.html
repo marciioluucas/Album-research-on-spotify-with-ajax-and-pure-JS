@@ -5,6 +5,7 @@
     <title>Spotify JSON decoder with an ajax request</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="custom-styles/css/style.css">
 
 </head>
 <body>
@@ -19,24 +20,34 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="color: #fff">#JSPower</a>
+                <a class="navbar-brand logo" href="#" style="color: #fff">#JSPower</a>
             </div>
 
 
         </div>
     </nav>
 </header>
-    <div class="container" style="margin-top: 100px;">
+<section class="cabecarioBusca">
+    <div class="container">
+        <h1 class="font-lobster">Vamos lá! Procure algum album que queira ouvir.</h1>
+        <input type="text" class="form-control" placeholder="Search" onkeyup="ajaxGet()" id="a">
+        <span class="highlight"></span>
+        <span class="barra"></span>
+        <label for="a">Album</label>
 
-            <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1"> Type an album</span>
-                <input type="text" class="form-control" placeholder="Album" id="a" aria-describedby="basic-addon1" onkeyup="ajaxGet()">
-            </div>
-
-        <ul id="listaAlbums" class="list-group">
-
-        </ul>
     </div>
+</section>
+<div class="container" style="margin-top: 100px;">
+
+
+    <ul id="listaAlbums" class="list-group">
+
+    </ul>
+</div>
+
+<footer style="width: 100%; text-align: center">
+    Feito com <span style="color: #d80404;">❤</span> por: <a href="http://github.com/marciioluucas">Márcio Lucas</a>
+</footer>
 </body>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/ajaxFunction.js"></script>
