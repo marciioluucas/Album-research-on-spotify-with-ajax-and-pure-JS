@@ -3,53 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Spotify com Materialize o/</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-
 </head>
 <body>
 <header>
-    <nav class="green darken-3">
+    <nav class="grey darken-3">
         <div class="nav-wrapper container">
-            <a href="#" class="brand-logo">\o/</a>
+            <a href="#" class="brand-logo"><img src="imgs/Spotify-logo.png" alt="spotify logo"
+                                                style="width: 180px; margin-top: 5px;"></a>
         </div>
     </nav>
 </header>
-<main class="container">
-    <section class="cabecarioBusca ">
+<main>
+    <section class=" parallax-container">
+        <div class="parallax"><img src="imgs/image-parallax.jpg"></div>
         <div class="center">
+            <br><br>
+            <h1 class="header center green-text">Spotify Album Search</h1>
             <div class="row">
-                <h4 class="">Vamos lá! Procure algum album que queira ouvir.</h4>
+                <h5 class="col s12 light ">Vamos lá! Procure algum album que queira ouvir.</h5>
             </div>
         </div>
         <div class="row col s12">
             <div class="input-field col s12 m12 l6 offset-l3">
-                <input type="text" class="validate" placeholder="Digite o nome de um album" onkeyup="jQueryGet()"
+                <input type="text" class="validate" onkeyup="jQueryGet()"
                        autocomplete="off"
                        id="campo">
-                <label for="campo" class="active">Album</label>
-
             </div>
         </div>
+    </section>
 
+    <section class="container">
+        <ul class="collection" id="listaAlbums">
+        </ul>
     </section>
-    <section class="div-resultados">
-        <div class="">
-            <ul id="listaAlbums" class="list-group"></ul>
-        </div>
-    </section>
+
 </main>
 <footer style="width: 100%; text-align: center; bottom: 0; position: relative">
     Feito com <span style="color: #d80404;">❤</span> por: <a href="http://github.com/marciioluucas">Márcio Lucas</a>
 </footer>
 </body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+<link rel="stylesheet" href="custom-styles/css/style.css">
 <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
 <!--<script src="js/ajaxFunction.js"></script>-->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="js/ajaxFunction.js"></script>
+<!-- Compiled and minified CSS -->
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 <script>
 
 </script>
