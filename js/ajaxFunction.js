@@ -1,7 +1,7 @@
 /**
  * Created by Márcio Lucas on 06/09/2016.
  */
-$(document).ready(function(){
+$(document).ready(function () {
     $('.parallax').parallax();
 });
 
@@ -13,31 +13,30 @@ function jQueryGet() {
 
         var obj = data;
         var totalItems = obj.albums.items.length;
-        console.log(obj);
         var html = "";
 
 
         for (var i = 0; i < totalItems; i++) {
 
-            html += "<li class='collection-item' style='height: 320px; !important;'>\n" +
+            html += "<li class='collection-item texto' style='height: auto; !important;'>\n" +
                 "<div class='row'>\n" +
-                "<div class='col s3'>\n" +
+                "<div class='col s12 m4 l4 center'>\n" +
                 "<img src='" + obj.albums.items[i].images[1].url + "'" +
                 " height='" + obj.albums.items[i].images[1].height + "'" +
                 "width='" + obj.albums.items[i].images[1].width + "'\n>" +
                 "</div>" +
-                "<div class='col s8'\n>" +
+                "<div class='col s12 m8 l8'\n>" +
                 "<a href='" + obj.albums.items[i].external_urls.spotify + "' class='green-text text-darken-1'><h4>" + obj.albums.items[i].name + "</h4></a>\n" +
                 "<h5>" + obj.albums.items[i].album_type + "</h5>\n" +
                 "</div>\n" +
                 "</div>\n" +
                 "</li>\n";
         }
+
         document.getElementById("listaAlbums").innerHTML = html;
-    });
 
+    })
 }
-
 
 // function ajaxGet() {
 //     var vCampo = document.getElementById("a");
